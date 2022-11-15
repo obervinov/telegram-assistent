@@ -55,7 +55,7 @@ The vault is used for:
 | `BOT_NAME` | The name of the bot | `telegram-assistent` |
 | `BOT_VAULT_MOUNT_PATH` | The point of mounting secrets in the vault | `secretv2` |
 
-## How to run with docker-compose
+## <img src="https://github.com/obervinov/content/blob/main/ico/2366710.png" width="25" title="docker"> How to run with docker-compose
 1. Building and launching docker container with vault-server
 ```sh
 docker-compose up -d vault-server
@@ -137,7 +137,7 @@ docker-compose up -d ${BOT_NAME}
 docker logs -f ${BOT_NAME}
 ```
 
-## How to run a bot locally without a docker
+## <img src="https://github.com/obervinov/content/blob/main/ico/8840892.png" width="25" title="locally"> How to run a bot locally without a docker
 **You need an already running and configured vault to use the approle and kv v2 engine**
 1. Installing python requirements
 ```sh
@@ -160,7 +160,7 @@ expot BOT_VAULT_APPROLE_SECRET_ID="change_me"
 python3 bot.py
 ```
 
-## How to build a docker image with a bot
+## <img src="https://github.com/obervinov/content/blob/main/ico/7264022.png" width="25" title="build"> How to build a docker image with a bot
 ```sh
 export BOT_VERSION=v1.0.0
 export BOT_NAME="telegram-assistent"
