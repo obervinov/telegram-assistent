@@ -7,7 +7,7 @@
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/instaloader?style=for-the-badge)
 
 ## <img src="https://github.com/obervinov/content/blob/main/ico/1945958.png" width="25" title="about"> About this project
-This bot helps to fix financial expenses on the basis of which it builds monthly reports.
+This bot helps to fix financial expenses on the basis of which it builds monthly reports.<br></br>
 Main functions:
 - accounting of income and expenses
 - generating monthly reports
