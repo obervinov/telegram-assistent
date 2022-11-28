@@ -120,8 +120,9 @@ vault read auth/approle/role/${BOT_NAME}-approle/role-id
 # ${YOUR_TELEGRAM_ID} - telegram id of your account for authorization of messages sent by the bot (whitelist)
 vault kv put secretv2/${BOT_NAME}-config/config b_token="${TELEGRAM_API_TOKEN}" whitelist="${YOUR_TELEGRAM_ID}"
 
-# Loading report categories (to summarize expenses by category)
+# Loading report categories (to summarize expenses by category). For example:
 vault kv put secretv2/${BOT_NAME}-data/categories "mandatory payments"="['credit for the car', 'rent an apartment', 'utilities', 'mobile communication','subscriptions']" food="['supermarket', 'fresh vegetables', 'bakery products']" cat="['cat food','filler']"
+
 ### Exiting the container shell ###
 ```
 4. Setting environment variables in the host OS (the required values must be obtained at the vault configuration step)
